@@ -1,0 +1,44 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import FetchingUser from './components/FetchingUser'
+import Home from './pages/Home';
+import Navbar from './pages/Navbar';
+import AddUser from './components/AddUser';
+import { useTheme } from './Hooks/useTheme';
+
+function App() {
+ 
+
+  return (
+    <div className="App">
+      <BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route path='/' element= {<Home/>}/>
+          <Route path='/AddUser' element={<AddUser/>}/>
+        </Routes>
+        <FetchingUser />
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+// import "./App.css";
+// import FetchingUser from "./components/FetchingUser";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>React CRUD with Axios + MockAPI</h1>
+//       <FetchingUser />
+//     </div>
+//   );
+// }
+
+// export default App;

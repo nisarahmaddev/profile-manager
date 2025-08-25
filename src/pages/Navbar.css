@@ -1,0 +1,50 @@
+.navbar{
+    margin: 30px 60px;
+    padding: 10px 20px;
+    background: -webkit-linear-gradient(rgb(88, 244, 145), rgb(79, 215, 236) );
+    border-radius: 6px;
+    display: flex;
+}
+@media only screen and (max-width : 501px) {
+    .navbar{
+      margin-left: 100px ;
+      width: 400px;
+    }
+}
+.navbar .brand2{
+    margin-left:  auto;
+    
+}
+.navbar nav a{
+    text-decoration: none;
+}    
+
+.navbar nav {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mode-icon {
+  width: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.mode-icon:hover {
+  transform: scale(1.2);
+}
+
+.navbar.dark{
+  background: linear-gradient(90deg, #66ffcc, #33ccff);
+}
+
+.mode-icon.light {
+  filter: invert(0%);
+}
+
+.mode-icon.dark {
+  filter: invert(100%);
+}

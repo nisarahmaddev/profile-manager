@@ -1,0 +1,84 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 960px;
+  display: flex;
+  margin-left: 100px;
+  gap: 10px;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.profilePic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+}
+.info {
+  text-align: left;
+}
+.info h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+.info p {
+  margin: 2px 0;
+  color: #444;
+}
+.info .bio {
+  font-style: italic;
+  font-size: 14px;
+  color: #666;
+}
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.actions button {
+  background: -webkit-linear-gradient(rgb(88, 244, 145), rgb(79, 215, 236) );
+  color: rgb(2, 78, 170);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.actions button:hover {
+  background: -webkit-linear-gradient(rgb(48, 201, 104), rgb(56, 180, 199) );
+}
+.delete {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.delete:hover {
+  transform: scale(1.2);
+}
+.card.dark {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+.name.dark{
+  color: white;
+}
+.pera.dark{
+  color: white;
+}
+.bio.dark{
+  color: white;
+}
+.actions.dark button{
+  background: linear-gradient(90deg, #66ffcc, #33ccff);
+}
+.delete.dark{
+  filter: invert(90%);
+}
+
+@media only screen and (max-width:491px) {
+    .card{
+      width: 400px;
+    }
+}
