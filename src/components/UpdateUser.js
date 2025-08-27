@@ -10,7 +10,6 @@
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    // Update user
     const handleUpdate = (e) => {
       e.preventDefault();
       setLoading(true);
@@ -80,8 +79,7 @@
               style={{ marginLeft: "10px" }}
             >
               Cancel
-            </button>
-              
+            </button>   
           </div>
         </form>
       </div>
