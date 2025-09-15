@@ -8,7 +8,6 @@ import { useTheme } from './Hooks/useTheme';
 
 function App() {
  
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -24,21 +23,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-// import "./App.css";
-// import FetchingUser from "./components/FetchingUser";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>React CRUD with Axios + MockAPI</h1>
-//       <FetchingUser />
-//     </div>
-//   );
-// }
-
-// export default App;
