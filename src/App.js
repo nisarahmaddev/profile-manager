@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import FetchingUser from './components/FetchingUser'
+import FetchingUser from './components/fetchingUser/FetchingUser'
 import Home from './pages/Home';
 import Navbar from './components/navbar/Navbar';
-import AddUser from './components/AddUser';
+import AddUser from './components/addUser/AddUser';
 
 function App() {
  
