@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import AddUser from "./AddUser";
-import DeleteIcon from '../images/abc.svg'
-import UpdateUser from "./UpdateUser";
+import DeleteIcon from '../assets/abc.svg'
+import UpdateUser from "../updateUser/UpdateUser";
 import "./FetchingUser.css";
-import { useTheme } from "../Hooks/useTheme";
+import { useTheme } from "../../Hooks/useTheme";
 
 const api = axios.create({
   baseURL: "https://6821faa1b342dce8004c9871.mockapi.io/usersdata/users",
@@ -53,10 +52,10 @@ export default function FetchingUser() {
       .catch((err) => setError(err.message));
   };
 
-  if (loading) return <h4>Loading users...</h4>;
-  if (error) return <h4>Error: {error}</h4>;
-
-
+  if (loading)
+    return <h4>Loading users...</h4>;
+  if (error)
+    return <h4>Error: {error}</h4>;
 
   return (
     <div className={`container ${mode}`}>

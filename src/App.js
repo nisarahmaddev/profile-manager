@@ -4,7 +4,6 @@ import FetchingUser from './components/FetchingUser'
 import Home from './pages/Home';
 import Navbar from './pages/Navbar';
 import AddUser from './components/AddUser';
-import { useTheme } from './Hooks/useTheme';
 
 function App() {
  

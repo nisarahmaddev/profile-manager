@@ -1,17 +1,16 @@
 import axios from "axios";
 import './AddUser.css'
 import { useEffect, useState } from "react";
-import { useTheme } from "../Hooks/useTheme";
+import { useTheme } from "../../Hooks/useTheme";
 
 const api = axios.create({
   baseURL: "https://6821faa1b342dce8004c9871.mockapi.io/usersdata/users",
 });
 
 export default function AddUser(onUserAdded) {
-  const [error, setError] = useState(null);
-  const [users, setUsers] = useState([]);
-
-  const [loading, setLoading] = useState(true);
+  const [ setError ] = useState(null);
+  const [ setUsers ] = useState([]);
+  const [ setLoading ] = useState(true);
 
   const [newUser, setNewUser] = useState({
     firstName: "",

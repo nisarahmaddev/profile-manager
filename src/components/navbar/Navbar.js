@@ -1,7 +1,7 @@
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import { useTheme } from '../Hooks/useTheme'
-import modeIcon from '../images/mode-icon.svg'
+import { useTheme } from '../../Hooks/useTheme'
+import modeIcon from '../assets/mode-icon.svg'
 
 export default function Navbar() {
   const { mode, changeMode } = useTheme()
@@ -24,6 +24,7 @@ export default function Navbar() {
           onClick={toggleMode}
           src={modeIcon}
           className={`mode-icon ${mode}`}
+          alt='changeMode'
         />
       </nav>
     </div>
