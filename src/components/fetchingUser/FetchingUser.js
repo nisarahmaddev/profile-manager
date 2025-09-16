@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import DeleteIcon from '../assets/abc.svg'
+import DeleteIcon from '../../assets/abc.svg'
 import UpdateUser from "../updateUser/UpdateUser";
 import "./FetchingUser.css";
 import { useTheme } from "../../Hooks/useTheme";

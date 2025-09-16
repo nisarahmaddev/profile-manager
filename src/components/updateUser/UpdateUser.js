@@ -9,11 +9,7 @@
     const [editUser, setEditUser] = useState(user);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-<<<<<<< HEAD:src/components/UpdateUser.js
-
-=======
     
->>>>>>> 318c7e7 (Updated):src/components/updateUser/UpdateUser.js
     const handleUpdate = (e) => {
       e.preventDefault();
       setLoading(true);
