@@ -46,10 +46,7 @@ export default function AddUser({ onUserAdded }) {
         setLoading(false);
       });
   };
-  
 
-const fetchData = useCallback(() => {
-}, []);
 useEffect(() => {
   fetchData();
 }, [fetchData]);
