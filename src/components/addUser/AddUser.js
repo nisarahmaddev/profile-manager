@@ -1,6 +1,6 @@
 import axios from "axios";
 import "./AddUser.css";
-import { useEffect, useState } from "react";
+import { useEffect, useCallback, useState } from "react";
 import { useTheme } from "../../Hooks/useTheme";
 
 const api = axios.create({
@@ -46,10 +46,13 @@ export default function AddUser({ onUserAdded }) {
         setLoading(false);
       });
   };
+  
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+const fetchData = useCallback(() => {
+}, []);
+useEffect(() => {
+  fetchData();
+}, [fetchData]);
 
   const { mode } = useTheme();
 
