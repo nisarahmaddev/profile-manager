@@ -8,9 +8,9 @@ const api = axios.create({
 });
 
 export default function AddUser({ onUserAdded }) {
-  const [error, setError] = useState(null);
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [setError] = useState(null);
+  const [setUsers] = useState([]);
+  const [setLoading] = useState(true);
 
   const [newUser, setNewUser] = useState({
     firstName: "",
